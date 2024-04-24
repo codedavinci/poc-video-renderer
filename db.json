@@ -1,0 +1,15 @@
+{
+    "scenes": [
+        {
+            "type": "TextAsset",
+            "id": "1213-1213d-1313-d1314",
+            "children": []
+        },
+        {
+            "type": "LottieAsset",
+            "id": "1213-1213d-1313-d1313",
+            "children": [],
+            "extras": {}
+        }
+    ]
+}

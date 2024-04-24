@@ -3,3 +3,5 @@ export type VideoData = {
     name: string
     children: []
 }
+
+export type  ReadonlyVideoData  = Readonly<VideoData>

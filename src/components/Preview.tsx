@@ -1,12 +1,16 @@
-import React from 'react'
-import { VideoData } from '../types'
+
+import { ReadonlyVideoData } from '../types'
 
 type  PreviewProps = {
-    videoData: VideoData
+    videoData: ReadonlyVideoData | null
 }
 
 
 export default function Preview({ videoData }: PreviewProps) {
+
+    if(!videoData) {
+     return <h1>Nothing to render !</h1>
+    }
 
 //PIXI bindings
 

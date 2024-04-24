@@ -2,26 +2,20 @@ import { VideoData } from "../types"
 
 
 
-
-
-
-type State  = Partial<VideoData>
-
-
 class LuminaryUtils {
-    private state: State
+    private state: VideoData | null
 
     constructor() {
-        this.state = {}
+        this.state = null
     }
 
-    load(rawVideoData: object) {
+    load(rawVideoData: VideoData) {
         this.state = rawVideoData
 
         return this.getState
     }
   
-    update(update: object) {
+    update(update: VideoData) {
       this.state = update 
   
       return this.getState;
